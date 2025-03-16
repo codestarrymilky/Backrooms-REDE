@@ -1,0 +1,16 @@
+.progress-container .bar-container {
+       animation: progress-1 calc(1.5s * 1) linear forwards;
+}
+
+.progress-container .bar-container {
+       animation: progress-{$class} calc(1.5s * {$class}) linear forwards;
+       height: var(--rede-collapsible-size);
+       position: absolute;
+}
+
+.progress-container .bar-container-5 {
+       animation: progress-last 4s linear forwards;
+       animation-delay: 11s;
+       height: var(--rede-collapsible-size);
+       position: absolute;
+}
