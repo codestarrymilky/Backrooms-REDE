@@ -1,0 +1,5 @@
+.rede-name{
+        width: calc(50% - var(--rede-border-size-sm));
+        height: 100%;
+        border-right: var(--inner-border);
+}
