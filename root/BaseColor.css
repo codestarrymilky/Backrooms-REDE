@@ -1,0 +1,10 @@
+:root{
+    --rede-light-background: 26, 26, 28;
+    --rede-light-text: var(--rede-properties-color);
+    --rede-dark-background: 66, 66, 67;
+    --rede-dark-text: var(--rede-properties-hover-color);
+    --rede-accent: 193, 44, 50;
+    --rede-properties-color: 195,195,195;
+    --rede-properties-hover-color: 195,195,195;
+    --rede-mask-color: #931E22;
+}
