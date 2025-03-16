@@ -1,0 +1,9 @@
+.bottom-container{
+    height: auto;
+    margin: 7px;
+    grid-column: 1 / 4;
+}
+
+.bottom-all-container{
+    width: 75%;
+}
