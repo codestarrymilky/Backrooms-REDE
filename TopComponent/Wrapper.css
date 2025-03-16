@@ -1,0 +1,11 @@
+.rede-wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr calc(2 * (var(--rede-base-size)));
+    grid-template-rows: repeat(2, calc(var(--rede-base-size) - 0.5vw)) auto auto;
+    gap: var(--rede-gap-pd);
+    padding: var(--rede-gap-pd);
+    color: rgb(var(--rede-dark-text));
+    position: relative;
+    background-color: rgb(var(--rede-dark-background));
+    font-family: var(--title-font);
+}
