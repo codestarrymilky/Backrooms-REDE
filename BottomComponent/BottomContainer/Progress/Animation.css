@@ -1,0 +1,96 @@
+@keyframes progress-1 {
+       from{
+                width: 0%;
+       }
+       to{
+                width: calc(25% - var(--rede-border-size-sm));
+                background-color: var(--L-1);
+       }
+}
+
+@keyframes progress-2 {
+       0%{
+                width: 0%;
+       }
+       50%{
+                width: calc(25% - var(--rede-border-size-sm));
+                background-color: var(--L-1);
+       }
+       100%{
+                width: calc(50% - var(--rede-border-size-sm));
+                background-color: var(--L-2);
+       }
+}
+
+@keyframes progress-3 {
+       0%{
+                width: 0%;
+       }
+       33.3%{
+                width: calc(25% - var(--rede-border-size-sm));
+                background-color: var(--L-1);
+       }
+       66.6%{
+                width: calc(50% - var(--rede-border-size-sm));
+                background-color: var(--L-2);
+       }
+       100%{
+                width: calc(75% - var(--rede-border-size-sm));
+                background-color: var(--L-3);
+       }
+}
+
+@keyframes progress-4 {
+       0%{
+                width: 0%;
+       }
+       25%{
+                width: calc(25% - var(--rede-border-size-sm));
+                background-color: var(--L-1);
+       }
+       50%{
+                width: calc(50% - var(--rede-border-size-sm));
+                background-color: var(--L-2);
+       }
+       75%{
+                width: calc(75% - var(--rede-border-size-sm));
+                background-color: var(--L-3);
+       }
+       100%{
+                width: 100%;
+                background-color: var(--L-4);
+       }
+}
+
+@keyframes progress-5 {
+       0%{
+                width: 0%;
+       }
+       25%{
+                width: calc(25% - var(--rede-border-size-sm));
+                background-color: var(--L-1);
+       }
+       50%{
+                width: calc(50% - var(--rede-border-size-sm));
+                background-color: var(--L-2);
+       }
+       75%{
+                width: calc(75% - var(--rede-border-size-sm));
+                background-color: var(--L-3);
+       }
+       100%{
+                width: 100%;
+                background-color: var(--L-4);
+       }
+}
+
+@keyframes progress-last {
+       from{
+                width: 0%;
+                background-color: var(--L-5);
+       }
+       to{
+                width: 100%;
+                background-color: var(--L-5);
+       }
+}
