@@ -1,0 +1,6 @@
+.bottom-top-container [class*=rede]{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(var(--rede-base-collapsible-bottom-size));
+}
