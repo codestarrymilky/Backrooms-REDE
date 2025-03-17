@@ -1,0 +1,19 @@
+.MAL:is(:hover, :active, :focus, :focus-within) ~ .MALT,
+.NSU:is(:hover, :active, :focus, :focus-within) ~ .NSUT,
+.CAE:is(:hover, :active, :focus, :focus-within) ~ .CAET,
+.REG:is(:hover, :active, :focus, :focus-within) ~ .REGT,
+.THR:is(:hover, :active, :focus, :focus-within) ~ .THRT,
+.UNI:is(:hover, :active, :focus, :focus-within) ~ .UNIT,
+.TSI:is(:hover, :active, :focus, :focus-within) ~ .TSIT,
+.PHO:is(:hover, :active, :focus, :focus-within) ~ .PHOT,
+.PTO:is(:hover, :active, :focus, :focus-within) ~ .PTOT,
+.DMO:is(:hover, :active, :focus, :focus-within) ~ .DMOT,
+.SDI:is(:hover, :active, :focus, :focus-within) ~ .SDIT,
+.TED:is(:hover, :active, :focus, :focus-within) ~ .TEDT,
+.DET:is(:hover, :active, :focus, :focus-within) ~ .DETT,
+.MDI:is(:hover, :active, :focus, :focus-within) ~ .MDIT,
+.BWA:is(:hover, :active, :focus, :focus-within) ~ .BWAT,
+.BLO:is(:hover, :active, :focus, :focus-within) ~ .BLOT,
+.CDA:is(:hover, :active, :focus, :focus-within) ~ .CDAT{
+  animation: information-enter 0.5s forwards;
+}
