@@ -1,0 +1,19 @@
+.property-container :is([class*=range],[class*=properties],[class*=attitude])::after {
+    color: rgb(var(--rede-light-text))!important;
+    background: rgb(var(--rede-light-background));
+    position: absolute;
+    width: calc(var(--rede-properties-size) + 0.5rem);
+    height: var(--rede-properties-h);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+    top: 1rem;
+    content: attr(data-tag);
+}
+
+.property-container :is([class*=range],[class*=properties],[class*=attitude]):is(:hover, :active, :focus, :focus-within)::after{
+    opacity: 1;
+}
