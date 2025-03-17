@@ -1,5 +1,0 @@
-.property-container :is([class*=range],[class*=properties],[class*=attitude]):is(:hover, :active, :focus, :focus-within) {
-    color: rgba(var(--rede-properties-hover-color));
-    background: rgba(var(--rede-accent));
-    transform: scale(calc(var(--rede-tag-hover-scale)));
-}
