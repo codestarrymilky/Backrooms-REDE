@@ -1,0 +1,25 @@
+
+@media only screen and (min-width: 1325px){
+     .class-logo{
+            grid-column: 3 / 4;
+            right: calc(var(--rede-gap-pd) * 8);
+     }
+}
+
+@media only screen and (max-width: 340px){
+     .class-logo{
+            grid-column: 3 / 4;
+            right: calc(var(--rede-gap-pd) * 4);
+     }
+}
+
+@media only screen and (max-width: 590px){
+  .tag-information{
+        left: calc(var(--aaaaa));/* 无用值会居中？？？ 设0反而不居中？？？ */
+        top: calc(100% + var(--rede-border-size)* 2 + 2px);
+  }
+
+  :root{
+       --no-sl-rede-iets: -0.7rem;/* rotate之后这个方向真的难调  */
+  }
+}
