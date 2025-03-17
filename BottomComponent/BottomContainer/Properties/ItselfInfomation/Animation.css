@@ -1,0 +1,13 @@
+@keyframes information-enter{
+    0%{
+       transform: translateX(-3rem);
+       opacity:0;
+       display: none;
+    }
+
+    100%{
+       transform:translateX(0);
+       opacity:1;
+       display: block;
+    }
+}
