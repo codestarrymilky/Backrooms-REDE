@@ -1,0 +1,37 @@
+.rede-wrapper,
+.rede-wrapper *{
+    animation-fill-mode: forwards;
+}
+
+.rede-wrapper{
+    animation: fade-In 1s;
+}
+
+.rede-iets-wrapper{
+    animation: right-to-left 2s;
+}
+
+.rede-iets-wrapper *{
+    animation: opacity 3s;
+}
+
+.rede-numloc{
+    animation: top-to-bottom 4s;
+}
+
+.rede-class-wrapper{
+    animation: bottom-to-top 4s;
+}
+
+.rede-iets-font{
+    animation: oblique-entry 5s;
+}
+
+:is(.rede-numloc, .rede-class-wrapper, .class-logo) *,
+.class-logo{
+    animation: opacity 5.5s;
+}
+
+.bottom-container .collapsible-block{
+    animation: opacity 6s;
+}
