@@ -1,0 +1,20 @@
+.tag-information{
+    width: calc(var(--rede-properties-size) + 1rem);
+    height: calc(100% + 6px + var(--rede-border-size) * 4 + var(--rede-collapsible-size) * 2);
+    border: var(--outline-border);
+    border-right: none;
+    position: absolute;
+    left: calc(var(--rede-properties-pd-abs) - 1px - 5rem - var(--rede-border-size));
+    bottom: calc(var(--rede-properties-pd-abs) - var(--rede-border-size));
+    margin: 0;
+    opacity: 0;
+    padding: 2px;
+    font-size: 13px;
+    padding-bottom: 0px;
+}
+
+.tag-information *{
+    margin-top: calc(var(--rede-properties-information-size) + 5px);
+    box-sizing: border-box;
+    text-align: left;
+}
