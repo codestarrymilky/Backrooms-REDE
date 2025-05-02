@@ -1,0 +1,111 @@
+.progress-container .bar-container {
+       animation: progress-{$class} calc(1.5s * {$class}) linear forwards;
+       height: var(--rede-collapsible-size);
+       position: absolute;
+       box-shadow: 0 0 1.5rem 0 inset rgb(var(--rede-dark-background));
+}
+
+.progress-container .bar-container-5 {
+       animation: progress-last 4s linear forwards;
+       animation-delay: 9s;
+       height: var(--rede-collapsible-size);
+       position: absolute;
+       box-shadow: 0 0 1.5rem 0 inset rgb(var(--rede-dark-background));
+}
+
+@keyframes progress-1 {
+       from{
+                width: 0%;
+       }
+       to{
+                width: 25%;
+                background-color: var(--L-1);
+       }
+}
+
+@keyframes progress-2 {
+       0%{
+                width: 0%;
+       }
+       50%{
+                width: 25%;
+                background-color: var(--L-1);
+       }
+       100%{
+                width: 50%;
+                background-color: var(--L-2);
+       }
+}
+
+@keyframes progress-3 {
+       0%{
+                width: 0%;
+       }
+       33.3%{
+                width: 25%;
+                background-color: var(--L-1);
+       }
+       66.6%{
+                width: 50%;
+                background-color: var(--L-2);
+       }
+       100%{
+                width: 75%;
+                background-color: var(--L-3);
+       }
+}
+
+@keyframes progress-4 {
+       0%{
+                width: 0%;
+       }
+       25%{
+                width: 25%;
+                background-color: var(--L-1);
+       }
+       50%{
+                width: 50%;
+                background-color: var(--L-2);
+       }
+       75%{
+                width: 75%;
+                background-color: var(--L-3);
+       }
+       100%{
+                width: 100%;
+                background-color: var(--L-4);
+       }
+}
+
+@keyframes progress-5 {
+       0%{
+                width: 0%;
+       }
+       25%{
+                width: 25%;
+                background-color: var(--L-1);
+       }
+       50%{
+                width: 50%;
+                background-color: var(--L-2);
+       }
+       75%{
+                width: 75%;
+                background-color: var(--L-3);
+       }
+       100%{
+                width: 100%;
+                background-color: var(--L-4);
+       }
+}
+
+@keyframes progress-last {
+       from{
+                width: 0%;
+                background-color: var(--L-5);
+       }
+       to{
+                width: 100%;
+                background-color: var(--L-5);
+       }
+}
