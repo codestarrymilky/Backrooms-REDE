@@ -1,0 +1,28 @@
+.rede-numloc {
+    grid-column: 1 / 3;
+    margin-right: calc(var(--rede-tc-margin));
+    padding: 1rem calc(var(--rede-base-size));
+    display: flex;
+    align-items: center;
+    color: rgb(var(--rede-light-text));
+    background-color: rgb(var(--rede-light-background));
+    font-size: calc(var(--rede-tc-font));
+    font-weight: 900;
+    clip-path: var(--rede-num-clip);
+    transform-origin: right top;
+    position: relative;
+    border: var(--rede-container-border);
+    filter: drop-shadow(0 0 1rem rgb(var(--rede-shadow)));
+}
+
+
+
+.rede-numloc div span:nth-of-type(2){
+    position: relative;
+    left: calc((var(--rede-base-size-abs)) / 2);
+}
+
+.rede-numloc :is(div,span){
+    width: 100%;
+    white-space: nowrap;
+}
