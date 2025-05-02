@@ -1,0 +1,101 @@
+@media only screen and (max-width: 590px){
+  
+  :root:has(.property-container :is([class*=range],[class*=properties],[class*=attitude]):is(:hover, :active, :focus, :focus-within)){
+     --rede-properties-info-specific: var(--rede-collapsible-size) + var(--rede-properties-pd) * 2;
+     --animation-clip: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  :root:has(.property-container :is([class*=range],[class*=properties],[class*=attitude]):is(:hover, :active, :focus, :focus-within)) .rede-img-b{
+    bottom: calc(var(--rede-properties-info-specific));
+  }
+
+    :root:has(.property-container :is([class*=range],[class*=properties],[class*=attitude]):is(:hover, :active, :focus, :focus-within)) .bottom-all-container::after{
+   height: calc(100% - (var(--rede-properties-info-specific)));
+  }
+
+:root:has(.property-container :is([class*=range],[class*=properties],[class*=attitude]):is(:hover, :active, :focus, :focus-within)) .bottom-all-container::before{
+   height: calc(100% - (var(--rede-properties-info-specific)));
+   bottom: calc(var(--rede-properties-info-specific));
+  }
+ 
+  .tag-information{
+      --height: var(--rede-properties-info-specific);
+      width: calc(100% + var(--rede-properties-pd) * 2 - var(--rede-border-size) * 2);
+      height: calc(var(--rede-properties-info-specific));
+      left: calc((var(--rede-properties-pd-abs)) * 2 + var(--rede-border-size) * 4);
+      top: calc(100% + var(--rede-border-size) * 3 + 1px);
+      border: var(--outline-border);
+      border-top: none;
+      font-size: 0.65rem;
+      transform: translateY(-100%) translateX(0);
+      --start-clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+      z-index: -1;
+  }
+
+  .tag-information *{
+      margin-top: 1rem;
+      text-align: center;
+  }
+
+  .tag-information::after{display: none;}
+  /* 懒得操作了 直接换元素 */
+  .tag-information::before{
+      width: var(--rede-properties-information-mobile-size);
+      height: var(--rede-properties-information-mobile-h);
+      top: 0;
+      background: rgb(var(--rede-accent));
+      content: var(--rede-properties-content);
+      font-size: 0.7rem;
+      text-align: center;
+      position: absolute;
+      left: calc((100% - var(--rede-properties-information-mobile-size)) / 2);
+  }
+  @supports not selector(:has(a)) {
+      :root{
+           --rede-properties-info-specific: var(--rede-collapsible-size) + var(--rede-properties-pd) * 2;
+      }
+
+      .bottom-all-container::after{
+           height: calc(100% - (var(--rede-properties-info-specific)));
+      }
+
+.bottom-all-container::before{
+           height: calc( - (var(--rede-properties-info-specific)));
+           bottom: calc(var(--rede-properties-info-specific));
+      }
+
+      .rede-img-b{
+          bottom: calc(var(--rede-properties-info-specific) + var(--rede-border-size));
+      }
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  :root{
+       --rede-tag-scale: 0.75;
+       --rede-tag-margin: 0;
+       --rede-boto-size: 0.8rem;
+       --rede-boto-longitudinal: -3px;
+   }
+
+  .rede-class *{
+      font-size: 0.6rem;
+  }
+
+  .bottom-container .collapsible-block-folded,
+  .bottom-container .collapsible-block-unfolded-link{
+      width: 90%;
+  }
+}
+
+@media only screen and (max-width: 360px){
+  :root{
+      --rede-base-size-abs: -2rem;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+   .rede-numloc :is(div,span){
+       white-space: normal;
+   }
+}
