@@ -1,0 +1,44 @@
+.bottom-container{
+    height: auto;
+    margin: 7px;
+    grid-column: 1 / 4;
+}
+
+.bottom-all-container{
+    width: 75%;
+    position: relative;
+    box-shadow: 0 0 1rem rgb(var(--rede-shadow));
+    margin-top: 6px;
+}
+
+
+.rede-img-ra{
+    width: 0.7rem;
+    height: 0.7rem;
+    background: var(--right-angle-mask) no-repeat center;
+    background-size: contain;
+    content: "aaaaa";
+    color: transparent;
+    position: absolute;
+    z-index: 7;
+}
+
+.rede-img-t{
+    top: 0;
+}
+
+.rede-img-b{
+    bottom: 0;
+}
+
+.rede-img-l{
+    left: var(--rede-border-size);
+}
+
+.rede-img-r{
+    right: calc(var(--rede-border-size) - var(--rede-border-size) * 2);
+}
+
+.rede-deg-90{transform: rotate(90deg);}
+.rede-deg-270{transform: rotate(270deg);}
+.rede-deg-180{transform: rotate(180deg);}
