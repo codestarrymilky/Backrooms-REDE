@@ -1,8 +1,0 @@
-.bottom-top-container{
-        display: flex;
-        width: 100%;
-        height: var(--rede-collapsible-size);
-        border: var(--outline-border);
-        border-bottom: none;
-        margin-top: 6px;
-}
