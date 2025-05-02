@@ -1,0 +1,52 @@
+.bottom-top-container{
+        display: flex;
+        width: 100%;
+        height: var(--rede-collapsible-size);
+        border: var(--outline-border);
+        border-bottom: none;
+        position: relative;
+        background-color: rgb(var(--rede-dark-background));
+}
+
+/* :is()不匹配伪元素 阿米诺斯 */
+
+.bottom-top-container::before,
+.bottom-top-container::after{
+        background: var(--T-angle-mask) no-repeat center;
+        background-size: contain;
+        width: var(--rede-boto-size);
+        height: var(--rede-boto-size);
+        content: "aaaaa";
+        position: absolute;
+        color: transparent;
+}
+
+.bottom-top-container::before{
+        top: var(--rede-boto-longitudinal);
+        left: calc((100% - var(--rede-boto-size)) / 2);
+}
+
+.bottom-top-container::after{
+        bottom: var(--rede-boto-longitudinal);
+        left: calc((100% - var(--rede-boto-size)) / 2);
+        transform-origin:50% 50%;
+        transform: rotate(180deg);
+}
+
+.bottom-top-container [class*=rede]{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(var(--rede-base-collapsible-bottom-size));
+}
+
+.rede-name{
+        width: calc(50% - 0.05rem);
+        height: 100%;
+        border-right: var(--inner-border);
+}
+
+.rede-level{
+        width: 50%;
+        height: 100%;
+}
