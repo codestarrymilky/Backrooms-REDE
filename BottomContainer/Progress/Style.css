@@ -1,0 +1,70 @@
+.progress-container{
+    border: var(--outline-border);
+    width: 100%;
+    height: var(--rede-collapsible-size);
+    display: flex;
+    position: relative;
+    background-color: rgb(var(--rede-dark-background));   
+    box-shadow: 0 0 1.5rem 0 inset rgb(var(--rede-light-background));
+}
+
+.progress-container::after,
+.progress-container::before{
+    background: var(--right-angle-sm-mask) no-repeat center;
+    background-size: contain;
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+    top: calc(-1rem / 2 - var(--rede-border-size-sm));
+    content: "aaaaa";
+    color: transparent;
+}
+
+.progress-container:after{
+    left: calc(100% - var(--rede-border-size-sm) - 1rem / 2);
+}
+
+
+.progress-container::before{
+    right: calc(100% - var(--rede-border-size-sm) - 1rem / 2 + 1rem);
+    top: calc(-1rem / 2 - var(--rede-border-size-sm));
+    transform-origin: right bottom;
+    transform: rotate(90deg);
+}
+
+
+.bar-border{
+    background: var(--bar-border-mask) no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: var(--rede-border-size-sm);
+    position: absolute;
+    left: var(--left-dir-z);
+    z-index: 3;
+}
+
+.bottom-all-container::after{
+    height: 100%;
+    width: 2rem;
+    background: var(--right-sp-mask) no-repeat center;
+    background-size: contain;
+    color: transparent;
+    content: "aaaaa";   
+    position: absolute;
+    top: 0;
+    left: calc(100% - var(--rede-border-size) * 2 + 5.5px);
+}
+
+.bottom-all-container::before{
+    height: 100%;
+    width: 2rem;
+    background: var(--left-sp-mask) no-repeat center;
+    background-size: contain;
+    color: transparent;
+    content: "aaaaa";   
+    position: absolute;
+    bottom: 0;
+    right: calc(100% - var(--rede-border-size) * 2 + 3px);
+    opacity: 1;
+    transition: right 0.4s ease;
+}
