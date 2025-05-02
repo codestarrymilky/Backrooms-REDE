@@ -1,0 +1,32 @@
+:root{
+    --rede-base-size: 6vw + 2rem;
+    --rede-base-size-abs: -6vw - 2rem;
+    --rede-gap-pd: 1vw;
+    --rede-base-collapsible-bottom-size: 0.5rem + 0.15vw;
+    --rede-collapsible-size: 2rem;
+    --inner-border: 0.05rem solid rgb(var(--rede-accent));
+    --outline-border: 0.1rem solid rgb(var(--rede-accent));
+    --rede-container-border: var(--rede-container-border-size) solid rgb(var(--rede-accent));
+    --rede-container-border-size: 0.3rem;
+    --rede-border-size: 0.1rem;
+    --rede-border-size-sm: 0.5rem;
+    --rede-properties-size: 4rem;
+    --rede-properties-h: 1.5rem;
+    --rede-properties-pd: 0.5rem;
+    --rede-properties-pd-abs: -0.5rem;
+    --rede-properties-information-size: 1.25rem;
+    --rede-properties-information-mobile-size: 6rem;
+    --rede-properties-information-mobile-h: 1rem;
+    --rede-iets-font-position: 2 * (var(--rede-base-size))/2 + 1.25rem + 2vw;
+    --rede-tc-font: 0.6rem + 0.75vw;
+    --rede-class-font: 1rem + 0.5vw;
+    --rede-tag-scale: 1;
+    --rede-tag-hover-scale: var(--rede-tag-scale) + 0.2;
+    --rede-tag-margin: 0.5rem;
+    --rede-properties-info-specific: 0;
+    --rede-boto-size: 1.5rem;
+    --rede-boto-longitudinal: -6px;
+    --rede-properties-info-specific: 0;
+    --rede-iets-scale: 0.7;
+    --rede-tc-margin: 0.5vw - (var(--rede-base-size));
+}
