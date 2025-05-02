@@ -1,0 +1,64 @@
+.tag-information{
+    --width: var(--rede-properties-size) + 1rem;
+    --start-clip: polygon(0 0, 0 0, 0 100%, 0 100%);
+    width: calc(var(--width));
+    height: calc(100% + 0.6rem + var(--rede-border-size) * 6 + var(--rede-collapsible-size) * 2);
+    background: rgb(var(--rede-dark-background));
+    border: var(--outline-border);
+    border-right: none;
+    position: absolute;
+    left: calc(var(--rede-properties-pd-abs) - 5.25rem - var(--rede-border-size));
+    bottom: calc(var(--rede-properties-pd-abs) - var(--rede-border-size));
+    margin: 0;
+    opacity: 0;
+    padding: 0.1rem;
+    font-size: 0.7rem;
+    padding-bottom: 0;
+    border-top: none;
+    clip-path: var(--start-clip);
+    transform: translateX(calc(var(--width)));
+    transition: all 0.4s ease;
+}
+
+.tag-information *{
+    margin-top: calc(var(--rede-properties-information-size) + 5px);
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.tag-information::after{
+    position: absolute;
+    inset: 0;
+    color: rgb(var(--rede-light-text));
+    content: var(--rede-properties-content);
+    font-size: 10.5px;
+    width: 100%;
+    background: var(--title-mask) no-repeat center;
+    background-size: cover;
+    height: var(--rede-properties-information-size);
+    text-align: center;
+    font-weight: bold;
+}
+
+.MAL:is(:hover, :active, :focus, :focus-within) ~ .MALT,
+.NSU:is(:hover, :active, :focus, :focus-within) ~ .NSUT,
+.CAE:is(:hover, :active, :focus, :focus-within) ~ .CAET,
+.REG:is(:hover, :active, :focus, :focus-within) ~ .REGT,
+.THR:is(:hover, :active, :focus, :focus-within) ~ .THRT,
+.UNI:is(:hover, :active, :focus, :focus-within) ~ .UNIT,
+.TSI:is(:hover, :active, :focus, :focus-within) ~ .TSIT,
+.PHO:is(:hover, :active, :focus, :focus-within) ~ .PHOT,
+.PTO:is(:hover, :active, :focus, :focus-within) ~ .PTOT,
+.PLR:is(:hover, :active, :focus, :focus-within) ~ .PLRT,
+.DMO:is(:hover, :active, :focus, :focus-within) ~ .DMOT,
+.SDI:is(:hover, :active, :focus, :focus-within) ~ .SDIT,
+.TED:is(:hover, :active, :focus, :focus-within) ~ .TEDT,
+.DET:is(:hover, :active, :focus, :focus-within) ~ .DETT,
+.MDI:is(:hover, :active, :focus, :focus-within) ~ .MDIT,
+.BWA:is(:hover, :active, :focus, :focus-within) ~ .BWAT,
+.BLO:is(:hover, :active, :focus, :focus-within) ~ .BLOT,
+.CDA:is(:hover, :active, :focus, :focus-within) ~ .CDAT{
+  clip-path: var(--animation-clip);
+  transform: translateX(0) translateY(0);
+  opacity: 1;
+}
