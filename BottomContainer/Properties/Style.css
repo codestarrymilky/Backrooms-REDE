@@ -1,0 +1,78 @@
+div.property-container{
+    margin: 0;
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+}
+
+.property-container-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - var(--rede-properties-pd) * 2);
+    height: auto;
+    padding: var(--rede-properties-pd);
+    border: var(--outline-border);
+    border-top: none;
+    background-color: rgb(var(--rede-dark-background));
+}
+
+.property-container :is([class*=range],[class*=properties],[class*=attitude]) {
+    background: rgb(var(--rede-light-background));
+    color: rgba(var(--rede-properties-color));
+    margin: var(--rede-tag-margin);
+    width: var(--rede-properties-size);
+    text-align: center;
+    height: var(--rede-properties-h);
+    padding: 0.1rem;
+    border-radius: 5px 120px / 120px;
+    text-decoration: none;
+    transition: background 0.5s, transform 0.5s, color 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: none;
+    transform: scale(var(--rede-tag-scale));
+}
+
+.attitude-tag,.range-tag,.properties-tag{
+    border: 0.25rem solid rgba(var(--properties-border),0.3);
+}
+
+.attitude-tag{--properties-border: 255,0,0;}
+.range-tag{--properties-border:255,165,0;}
+.properties-tag{--properties-border: 255,255,255;}
+
+.property-container :is([class*=range],[class*=properties],[class*=attitude]):is(:hover, :active, :focus, :focus-within) {
+    color: rgba(var(--rede-properties-hover-color));
+    background: rgba(var(--rede-accent));
+    transform: scale(calc(var(--rede-tag-hover-scale)));
+    z-index: 4;
+}
+
+.property-container :is([class*=range],[class*=properties],[class*=attitude])::after {
+    color: rgb(var(--rede-light-text))!important;
+    background: rgb(var(--rede-light-background));
+    position: absolute;
+    width: calc(var(--rede-properties-size) + 1rem);
+    height: var(--rede-properties-h);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+    top: 1.5rem;
+    content: attr(data-tag);
+    z-index: 6;
+}
+
+.property-container :is([class*=range],[class*=properties],[class*=attitude]):is(:hover, :active, :focus, :focus-within)::after{
+    opacity: 1;
+}
