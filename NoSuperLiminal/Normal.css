@@ -1,9 +1,0 @@
-.class-logo{
-      grid-column: 3 / 4;
-      right: var(--rede-gap-pd);
-}
-
-.class-logo-inner{
-    -webkit-mask-size: 45%;
-    mask-size: 45%;
-}
