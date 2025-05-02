@@ -1,0 +1,22 @@
+[class*=rede-border]{
+    width: var(--rede-container-border-size)!important;
+    height: 100%;
+    background: rgb(var(--rede-accent));
+    position: absolute;
+}
+
+[class*=border-numloc]{
+    transform: skew(-45deg);
+}
+
+[class*=border-class]{
+    transform: skew(45deg);
+}
+
+[class*=bdleft]{
+    left: calc(var(--rede-base-size) - (var(--rede-base-size) + 0.5vw) / 2 - var(--rede-container-border-size));
+}
+
+[class*=bdright]{
+    right: calc(var(--rede-base-size) - (var(--rede-base-size) + 0.5vw) / 2 - var(--rede-container-border-size));
+}
